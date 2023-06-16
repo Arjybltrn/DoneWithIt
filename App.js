@@ -11,11 +11,13 @@ export default function App() {
   return (
     
       <View style={{
-            backgroundColor: "white",
+            backgroundColor: "#fff",
             flex: 1,
             flexDirection: "row", // horizontal
-            justifyContent: "center", //main
-            alignItems: "center", //secondary 
+            justifyContent: "center", // main 
+            alignItems: "center", //secondary
+            alignContent: "center", 
+            flexWrap: "wrap",
           }}>
 
           
@@ -41,6 +43,19 @@ export default function App() {
                 height: 100,
               }}>
 
+            </View>
+
+            <View style ={{
+                backgroundColor: "grey",
+                width: 100,
+                height: 100,
+              }}>
+            </View>
+            <View style ={{
+                backgroundColor: "greenyellow",
+                width: 100,
+                height: 100,
+              }}>
             </View>
         </View>
   
