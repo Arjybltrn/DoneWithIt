@@ -16,9 +16,13 @@ function WelcomeScreen(props) {
                 
         </View>
 
-        <View style={styles.loginButton}></View>
+        <View style={styles.loginButton}>
+            <Text style={styles.loginText}>Login</Text>
+        </View>
 
-        <View style={styles.registerButton}></View>
+        <View style={styles.registerButton}>
+            <Text style={styles.registerText}>Register</Text>
+        </View>
 
        </ImageBackground>
     );
@@ -51,7 +55,7 @@ const styles = StyleSheet.create({
         height: 100,
         //primary axis flex vertical line
         //secondary axis flex horizontal line
-    }
+    },
 })
 
 export default WelcomeScreen;
