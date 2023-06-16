@@ -6,6 +6,7 @@ import { useDimensions, useDeviceOrientation } from '@react-native-community/hoo
 import WelcomeScreen from './app/screens/WelcomeScreen';
 import ViewImageScreen from './app/screens/ViewImageScreen';
 import AppText from './app/components/AppText';
+import {MaterialCommunityIcons} from '@expo/vector-icons'
 
 
 export default function App() {
@@ -18,7 +19,9 @@ export default function App() {
       alignItems: "center",
     }}>
 
-        <AppText>I Love React Native!</AppText>
+        <AppText>I love react native</AppText>
+
+        <MaterialCommunityIcons name="email" size={200} color="dodgerblue"/>
     </View>
 
       );
