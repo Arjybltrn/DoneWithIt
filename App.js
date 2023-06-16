@@ -9,17 +9,14 @@ import AppText from './app/components/AppText';
 import { MaterialCommunityIcons } from '@expo/vector-icons' // icons
 import colors from './app/config/colors'
 import AppButton from './app/components/AppButton';
+import Card from './app/components/Card'
+import ListingDetailsScreen from './app/screens/ListingDetailsScreen';
 
 export default function App() {
 
 
   return (
-   <WelcomeScreen />
-
-    
-  
-
-    
+    <ListingDetailsScreen />
 
       );
   }
