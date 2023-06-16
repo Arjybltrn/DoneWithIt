@@ -22,7 +22,7 @@ function ViewImageScreen(props) {
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: "black",
+        backgroundColor: colors.black,
         flex: 1,
     },
     deleteIcon: {
