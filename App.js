@@ -6,25 +6,24 @@ import { useDimensions, useDeviceOrientation } from '@react-native-community/hoo
 import WelcomeScreen from './app/screens/WelcomeScreen';
 import ViewImageScreen from './app/screens/ViewImageScreen';
 import AppText from './app/components/AppText';
-import {MaterialCommunityIcons} from '@expo/vector-icons'
-
+import { MaterialCommunityIcons } from '@expo/vector-icons' // icons
+import colors from './app/config/colors'
+import AppButton from './app/components/AppButton';
 
 export default function App() {
 
 
   return (
-    <View style={{
-      flex: 1,
-      justifyContent: "center",
-      alignItems: "center",
-    }}>
+   <WelcomeScreen />
 
-        <AppText>I love react native</AppText>
+    
+  
 
-        <MaterialCommunityIcons name="email" size={200} color="dodgerblue"/>
-    </View>
+    
 
       );
   }
+
+ 
 
 

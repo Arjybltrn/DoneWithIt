@@ -1,9 +1,13 @@
 import React from 'react';
 import { Image, ImageBackground, StyleSheet, Text, View} from 'react-native';
+import colors from '../config/colors'
+import AppButton from '../components/AppButton';
+
 
 function WelcomeScreen(props) {
     return (
        <ImageBackground 
+       blurRadius={5}
          style = {styles.background}
          source={require("../assets/background.jpg")}>
 
@@ -12,17 +16,15 @@ function WelcomeScreen(props) {
 
             <Image style = {styles.logo}
             source={require('../assets/logo-red.png')}/>
-            <Text>Sell What You Don't Need</Text>
+            <Text style={styles.tagline}>Sell What You Don't Need</Text>
                 
         </View>
-
-        <View style={styles.loginButton}>
-            <Text style={styles.loginText}>Login</Text>
+        <View style={styles.buttonsContainer}>
+        <AppButton title="login" />
+        <AppButton title="register" color="secondary" />
         </View>
-
-        <View style={styles.registerButton}>
-            <Text style={styles.registerText}>Register</Text>
-        </View>
+       
+       
 
        </ImageBackground>
     );
@@ -39,22 +41,21 @@ const styles = StyleSheet.create({
         top: 70,
         alignItems: "center"
     },
-    loginButton: {
-        width: '100%',
-        height: 70,
-        backgroundColor: "#fc5c65",
+    buttonsContainer : {
+        padding: 20,
+        width: "100%",
+    },
 
-    },
-    registerButton: {
-        width: '100%',
-        height: 70,
-        backgroundColor: "#4ecdc4",
-    },
     logo : {
         width: 100,
         height: 100,
         //primary axis flex vertical line
         //secondary axis flex horizontal line
+    },
+    tagline: {
+        fontSize: 25,
+        paddingVertical: 20,
+        fontWeight: "600"
     },
 })
 
