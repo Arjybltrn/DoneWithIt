@@ -5,10 +5,16 @@ TouchableNativeFeedback, TouchableHighlight, TouchableWithoutFeedback, Touchable
 import { useDimensions, useDeviceOrientation } from '@react-native-community/hooks';
 import WelcomeScreen from './app/screens/WelcomeScreen';
 
+
 export default function App() {
+  // console.log(Dimensions.get("screen")) // get dimensions of device
+
+
   return (
-     <WelcomeScreen />
-    
-  );
-}
+
+        <WelcomeScreen />
+        
+      );
+  }
+
 
