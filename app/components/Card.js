@@ -1,9 +1,9 @@
 import React from 'react';
-import { View, StyleSheet } from 'react-native'
+import { View, StyleSheet, Image } from 'react-native'
 import colors from '../config/colors'
 import AppText from './AppText';
 
-function Card(title, subTitle, image) {
+function Card({title, subTitle, image}) {
     return (
         <View styles={styles.card}>
             <Image style={styles.image} source={image} />
