@@ -3,10 +3,10 @@ import Constants from  'expo-constants'
 import { BackHandler, StyleSheet } from 'react-native';
 import { SafeAreaView } from 'react-native';
 
-function Screen({children}) {
+function Screen({children, style}) {
     return (
      
-            <SafeAreaView style={styles.screen}>
+            <SafeAreaView style={[styles.screen, style]}>
                 {children}
             </SafeAreaView>
 
